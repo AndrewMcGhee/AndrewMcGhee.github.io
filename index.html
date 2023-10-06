@@ -11,7 +11,7 @@
             padding: 0;
             background-color: #f2f2f2;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
         }
@@ -27,6 +27,11 @@
         hr {
             border: 1px solid #ccc;
             margin: 20px 0;
+        }
+        .project-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         article {
             background-color: white;
@@ -53,19 +58,21 @@
     </header>
     <hr>
     
-    <!-- First Project Section -->
-    <article>
-        <h2>Project 1: WOMP WOMP</h2>
-        <p>This is a paragraph describing the first project. You can add more informative content here.</p>
-        <a href="https://sites.google.com/oakland.edu/puwalnotes/home">Learn More</a>
-    </article>
-    
-    <!-- Second Project Section -->
-    <article>
-        <h2>Project 2: Another Project</h2>
-        <p>This is a paragraph describing the second project. You can add more informative content here.</p>
-        <a href="#">Learn More</a>
-    </article>
+    <div class="project-container">
+        <!-- First Project Section -->
+        <article>
+            <h2>Project 1: WOMP WOMP</h2>
+            <p>This is a paragraph describing the first project. You can add more informative content here.</p>
+            <a href="https://sites.google.com/oakland.edu/puwalnotes/home">Learn More</a>
+        </article>
+        
+        <!-- Second Project Section -->
+        <article>
+            <h2>Project 2: Another Project</h2>
+            <p>This is a paragraph describing the second project. You can add more informative content here.</p>
+            <a href="#">Learn More</a>
+        </article>
+    </div>
     
 </body>
 </html>
